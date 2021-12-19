@@ -7,7 +7,8 @@
 }
 
 .header {
-    height: 7rem;
+    display: flex;
+    // height: 7rem;
     background-color: #ffff;
     border-bottom: $color-grey-light-2;
 }
