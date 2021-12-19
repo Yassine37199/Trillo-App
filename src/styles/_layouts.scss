@@ -7,8 +7,11 @@
 }
 
 .header {
+    font-size: 1.4rem;
     display: flex;
-    // height: 7rem;
+    justify-content: space-between;
+    align-items: center;
+    height: 7rem;
     background-color: #ffff;
     border-bottom: $color-grey-light-2;
 }
