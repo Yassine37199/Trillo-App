@@ -189,3 +189,53 @@
     padding: 2.5rem;
     color: $color-grey-light-4;
 }
+
+
+///////////// GALLERY //////////////////
+
+.gallery {
+
+    display: flex;
+
+    &__photo {
+        display: block;
+        height: 197px;
+    }
+}
+
+
+//////////////// HOTEL OVERVIEW //////////////////
+
+.overview {
+
+    display: flex;
+
+    &__heading {
+
+    }
+
+    &__stars {
+        margin-right: auto;
+    }
+
+    &__icon {
+        width: 1.75rem;
+        height: 1.75rem;
+        fill: $color-primary;
+    }
+
+    &__location {
+       
+    }
+
+    &__rating {
+
+        &--count {
+
+        }
+
+        &--average {
+
+        }
+    }
+}

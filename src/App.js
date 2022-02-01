@@ -1,6 +1,10 @@
 import logo from './img/logo.png';
 import UserPhoto from './img/user-4.jpg';
 
+import Hotel1 from './img/hotel-1.jpg';
+import Hotel2 from './img/hotel-2.jpg';
+import Hotel3 from './img/hotel-3.jpg';
+
 import {ReactComponent as GlassIcon} from './img/SVG/magnifying-glass.svg';
 import {ReactComponent as BookmarkIcon} from './img/SVG/bookmark.svg';
 import {ReactComponent as ChatIcon} from './img/SVG/chat.svg';
@@ -8,6 +12,10 @@ import {ReactComponent as HomeIcon} from './img/SVG/home.svg';
 import {ReactComponent as PlaneIcon} from './img/SVG/aircraft.svg';
 import {ReactComponent as KeyIcon} from './img/SVG/key.svg';
 import {ReactComponent as MapIcon} from './img/SVG/map.svg';
+import {ReactComponent as StarIcon} from './img/SVG/star.svg';
+import {ReactComponent as LocationIcon} from './img/SVG/location-pin.svg';
+
+
 
 import './styles/main.scss';
 
@@ -76,7 +84,40 @@ function App() {
              </div>
            </nav>
            <main className='hotel-view'>
-             Hotel View
+             <div className='gallery'>
+               <figure className='gallery__item'>
+                 <img src={Hotel1} alt='' className='gallery__photo' />
+               </figure>
+               <figure className='gallery__item'>
+                 <img src={Hotel2} alt='' className='gallery__photo' />
+               </figure>
+               <figure className='gallery__item'>
+                 <img src={Hotel3} alt='' className='gallery__photo' />
+               </figure>
+             </div>
+
+             <div className='overview'>
+               <h1 className='overview__heading'>
+                 Hotel Las Palmas
+               </h1>
+               <div className='overview__stars'>
+                  <StarIcon className="overview__icon" />
+                  <StarIcon className="overview__icon" />
+                  <StarIcon className="overview__icon" />
+                  <StarIcon className="overview__icon" />
+                  <StarIcon className="overview__icon" />
+               </div>
+
+               <div className='overview__location'>
+                  <LocationIcon className="overview__icon" />
+                  <button className='btn-inline'>Albufeira, Portugal</button>
+               </div>
+
+               <div className='overview__rating'>
+                 <div className='overview__rating--average'>8.6</div>
+                 <div className='overview__rating--average'>467 votes</div>
+               </div>
+             </div>
            </main>
          </div>
        </div>
