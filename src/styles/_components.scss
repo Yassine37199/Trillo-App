@@ -209,33 +209,83 @@
 .overview {
 
     display: flex;
+    align-items: center;
 
     &__heading {
-
+        font-size: 2.25rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 1.5rem 3rem;
     }
 
     &__stars {
         margin-right: auto;
+        display: flex;
     }
 
-    &__icon {
+    &__icon,
+    &__icon-location {
         width: 1.75rem;
         height: 1.75rem;
         fill: $color-primary;
     }
 
     &__location {
-       
+       font-size: 1.2rem;
+       display: flex;
+       align-items: center;
     }
+
+    &__icon-location {
+        margin-right: .5rem;
+    }
+
+    
 
     &__rating {
 
-        &--count {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-self: stretch;
+        background-color: $color-primary;
+        margin-left: 3rem;
+        color: #fff;
+        padding: 0 2.25rem;
 
+        &--count {
+            font-size: .8rem;
+            text-transform: uppercase; 
         }
 
         &--average {
-
+            font-size: 2.25rem;
+            font-weight: 300;
         }
+    }
+}
+
+
+/////////// BUTTON INLINE //////////////
+
+.btn-inline {
+    border: none; 
+    color: $color-primary; 
+    font-size: inherit;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+    display: inline-block;
+    background-color: transparent;
+    transition: all .2s;
+
+    &:hover {
+        color: $color-grey-dark-1;
+        cursor: pointer;
+    }
+
+    &:focus {
+        outline: none;
     }
 }
