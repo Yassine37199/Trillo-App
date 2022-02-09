@@ -5,6 +5,11 @@ import Hotel1 from './img/hotel-1.jpg';
 import Hotel2 from './img/hotel-2.jpg';
 import Hotel3 from './img/hotel-3.jpg';
 
+import Friend1 from './img/user-3.jpg';
+import Friend2 from './img/user-4.jpg';
+import Friend3 from './img/user-5.jpg';
+import Friend4 from './img/user-6.jpg';
+
 import {ReactComponent as GlassIcon} from './img/SVG/magnifying-glass.svg';
 import {ReactComponent as BookmarkIcon} from './img/SVG/bookmark.svg';
 import {ReactComponent as ChatIcon} from './img/SVG/chat.svg';
@@ -116,6 +121,41 @@ function App() {
                <div className='overview__rating'>
                  <div className='overview__rating--average'>8.6</div>
                  <div className='overview__rating--count'>467 votes</div>
+               </div>
+             </div>
+
+             <div className='detail'>
+               <div className='description'>
+                  <p className='paragraph'>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nisi dignissimos debitis ratione sapiente saepe. Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate.
+                  </p>
+                  <p className='paragraph'>
+                    Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate delectus, inventore iure aliquid aliquam.
+                  </p>
+                  <ul className='list'>
+                    <li className='list__item'>Close to the beach</li>
+                    <li className='list__item'>Breakfast included</li>
+                    <li className='list__item'>Free airposrt shuttle</li>
+                    <li className='list__item'>Free Wifi in all rooms</li>
+                    <li className='list__item'>Air conditioning and heating</li>
+                    <li className='list__item'>Pets allowed</li>
+                    <li className='list__item'>We speak all languages</li>
+                    <li className='list__item'>Perfect for families</li>
+                  </ul>
+                  <div className='recommend'>
+                    <p className='recommend__count'>
+                      Lucy and 3 other friends recommend this hotel.
+                    </p>
+                    <div className='recommend__friends'>
+                      <img src={Friend1} alt="friend 1" className='recomment__photo' />
+                      <img src={Friend2} alt="friend 2" className='recomment__photo' />
+                      <img src={Friend3} alt="friend 3" className='recomment__photo' />
+                      <img src={Friend4} alt="friend 4" className='recomment__photo' />
+                    </div>
+                  </div>
+               </div>
+               <div className='user-reviews'>
+                  User Overview
                </div>
              </div>
            </main>
